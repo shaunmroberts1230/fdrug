@@ -188,7 +188,3 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
-
-applicationhost.config
-*.pubxml
-*.db
