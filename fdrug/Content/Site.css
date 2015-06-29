@@ -1,0 +1,109 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #E2DF9A !important;
+}
+
+.homebanner{
+    background-color: #EBE54D;
+    margin: 0;
+    padding: 20px;
+}
+
+.header{
+    background-color: #4B490B !important;
+    border-color: #4B490B !important;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: #EBE54D !important;
+}
+
+.navbar-toggle .collapsed {
+    
+    background-color: #4B490B !important;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #E2DF9A !important;
+}
+
+.icon-bar, .navbar-toggle{
+    border-color: #EBE54D !important;
+}
+
+hr{
+    border-color: #4B490B !important;
+}
+
+.spinny {
+    transition-property: transform;
+    transition-duration: 0;
+}
+
+.spinny:hover {
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1.2s; 
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(180deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotateY(0deg);}
+    to {-moz-transform: rotateY(180deg);}
+}
+
+@keyframes rotate {
+    from {
+       transform: rotateY(0deg);
+    }
+    to {transform: rotateY(180deg);}
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.headerLink{
+    color:  white !important;
+}
+
+.headerLink:hover{
+    color:  #EBE54D !important;
+}
+
+.avatar img{
+    max-height: 140px;
+    max-width: 140px;
+}
+
+.fbLike{
+}

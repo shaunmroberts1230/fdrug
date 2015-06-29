@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@section css{
+    <link href="/Content/about.css" rel="stylesheet" />
+}
+<script type="text/javascript">
+    function show(div) {
+        $('#fdContent').fadeOut();
+
+        $(div).fadeIn();
+    }
+    function hide(div) {
+        $(div).fadeOut();
+        $('#fdContent').fadeIn();
+    }
+</script>
+<div class="row">
+    <div class="col-md-12 listCont">
+        <ul class="list-unstyled">
+            <li><img src="~/Content/img/ben.jpg"><p><b>Ben</b> - Lead vocalist, Guitarist</p></li>
+            <li><img src="~/Content/img/eric.jpg"><p><b>Eric</b> - Lead guitarist, Backup vocalist</p></li>
+            <li><img src="~/Content/img/robert.jpg"><p><b>Robert</b> - Drummer</p></li>
+            <li><img src="~/Content/img/shaun.jpg"><p><b>Shaun</b> - Bassist</p></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8 cont">
+        <ul class='circle-container'>
+            <li><a href='#'><img src="~/Content/img/eric.jpg" onmouseover="show('#ericContent')" onmouseout="hide('#ericContent')"></a></li>
+            <li><a href='#'><img src="~/Content/img/robert.jpg" onmouseover="show('#robertContent')" onmouseout="hide('#robertContent')"></a></li>
+            <li><a href='#'><img src="~/Content/img/shaun.jpg" onmouseover="show('#shaunContent')" onmouseout="hide('#shaunContent')"></a></li>
+            <li><a href='#'><img src="~/Content/img/ben.jpg" onmouseover="show('#benContent')" onmouseout="hide('#benContent')"></a></li>
+        </ul>
+
+        <span id="mobHid">
+            <p id="fdContent">FD</p>
+        </span>
+
+        <span id="benContent">
+            <b>Ben</b><br />
+            Vocalist<br />
+            Guitarist
+        </span>
+        <span id="ericContent">
+            <b>Eric</b><br />
+            Guitarist<br />
+            Vocalist
+        </span>
+        <span id="robertContent">
+            <b>Robert</b><br />
+            Drummer<br />
+            Nissan Versa
+        </span>
+        <span id="shaunContent">
+            <b>Shaun</b><br />
+            Bassist<br />
+            Antics
+        </span>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>

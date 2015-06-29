@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fairfax Drug.  An Atlanta band">
+    <meta name="keywords" content="Fairfax,Drug,Ben,Erik,Robert,Shaun,band,Atlanta">
+    <meta name="author" content="Shaun Marcus Anthony Roberts">
+    <title>@ViewBag.Title - Fairfax Drug</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    @RenderSection("css", false)
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "index", null, new { @class = "headerLink" })</li>
+                    <li>@Html.ActionLink("About", "about", null, new { @class = "headerLink" })</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    @RenderSection("pageBanner", false)
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        &copy; @DateTime.Now.Year - Fairfax Drug
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="fb-like" data-href="https://www.facebook.com/fairfaxdrug" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+   
+</body>
+</html>
