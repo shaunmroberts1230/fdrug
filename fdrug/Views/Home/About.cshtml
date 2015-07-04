@@ -4,17 +4,6 @@
 @section css{
     <link href="/Content/about.css" rel="stylesheet" />
 }
-<script type="text/javascript">
-    function show(div) {
-        $('#fdContent').fadeOut();
-
-        $(div).fadeIn();
-    }
-    function hide(div) {
-        $(div).fadeOut();
-        $('#fdContent').fadeIn();
-    }
-</script>
 <div class="row">
     <div class="col-md-12 listCont">
         <ul class="list-unstyled">
@@ -35,11 +24,9 @@
             <li><a href='#'><img src="~/Content/img/shaun.jpg" onmouseover="show('#shaunContent')" onmouseout="hide('#shaunContent')"></a></li>
             <li><a href='#'><img src="~/Content/img/ben.jpg" onmouseover="show('#benContent')" onmouseout="hide('#benContent')"></a></li>
         </ul>
-
         <span id="mobHid">
-            <p id="fdContent">FD</p>
+            <div id="fdContent">FD</div>
         </span>
-
         <span id="benContent">
             <b>Ben</b><br />
             Vocalist<br />
@@ -64,3 +51,7 @@
     <div class="col-md-2">
     </div>
 </div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/about")
+}

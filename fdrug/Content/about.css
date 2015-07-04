@@ -105,32 +105,29 @@
                 -webkit-filter: grayscale(0);
                 filter: grayscale(0);
             }
-
-    
 }
 
-
-
-p {
+#fdContent {
     font-weight: bold;
     color: #4B490B;
     margin-top: 2em;
+    display: block;
 }
 
 .cont span {
-        display: none;
-        position: absolute;
-        bottom: 50%;
-        left: 50%;
-        width: 6em;
-        height: 6em;
-        text-align: center;
-        margin: -3em;
-    }
+    display: none;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    text-align: center;
+    margin: -3em;
+}
 
-     span#mobHid {
-        display: block;
-        border-radius: 50%;
-        background-color: #EBE54D;
-        font-size: 28px;
-    }
+span#mobHid {
+    display: block;
+    border-radius: 50%;
+    background-color: #EBE54D;
+    font-size: 28px;
+}
