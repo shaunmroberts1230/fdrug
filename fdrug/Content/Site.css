@@ -105,5 +105,8 @@ textarea {
     max-width: 140px;
 }
 
-.fbLike{
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

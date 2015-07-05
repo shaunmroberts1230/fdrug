@@ -156,16 +156,12 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -176,10 +172,10 @@
     <Content Include="Content\img\eric.jpg" />
     <Content Include="Content\img\ben.jpg" />
     <Content Include="Content\img\fd.png" />
+    <Content Include="Content\img\ff.png" />
+    <Content Include="Content\img\ff_banner.png" />
     <Content Include="Content\img\robert.jpg" />
     <Content Include="Content\img\shaun.jpg" />
-    <Content Include="Content\img\default.png" />
-    <Content Include="Content\img\genericAvatar.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
