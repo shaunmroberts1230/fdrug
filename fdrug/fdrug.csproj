@@ -175,6 +175,7 @@
     <Content Include="Content\img\ff_banner.png" />
     <Content Include="Content\img\generic_avatar.jpeg" />
     <Content Include="Content\img\robert.jpg" />
+    <Content Include="Content\img\shane.jpg" />
     <Content Include="Content\img\shaun.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
